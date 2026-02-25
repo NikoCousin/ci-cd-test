@@ -13,4 +13,8 @@ contract Locker {
     }
 }
 
+function reset() external {
+    unlockAt[msg.sender] = 0;
+}
+
 //test
